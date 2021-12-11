@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    password: 123
+    url: jdbc:postgresql://localhost:5432/portfoliodb
+    username: postgres
+
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.springframework.jdbc: info
+#    org:
+#      hibernate:
+#        SQL: debug
+#        type:
+#          descriptor:
+#            sql:
+#              basicBinder: trace
+#      springframework:
+#        jdbc:
+#          core:
+#            jdbcTemplate: debug
+#            statementCreatorUtils: trace
